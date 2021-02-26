@@ -10,4 +10,3 @@ Roboto is the main font-family.
 
 # Plugins:  
 Dim will never require any additional third-party plugins.  
-All functionality shall be native JavaScript.  
