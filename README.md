@@ -9,8 +9,8 @@ Roboto is the main font-family.
 
 # Libraries:  
 Dim comes with the following libraries:  
-- Bootstrap (CDN)
-- FontAwesome (CDN)
+- Bootstrap (CDN)  
+- FontAwesome (CDN)  
 
 # Plugins:  
 Dim will never require any additional third-party plugins.  
