@@ -754,6 +754,12 @@ nav.main-navigation a:hover {
 	margin: 0 0 1.5em;
 }
 
+@media screen and (min-width: 37.5em) {
+	.site-main {
+		margin-top: 8em;
+	}
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -897,6 +903,16 @@ nav.main-navigation a:hover {
 	margin: 0;
 	font-size: 2em;
 	font-weight: lighter;
+}
+
+.arrow-wrapper {
+	text-align: center;
+}
+
+.arrow-wrapper #header-arrow-down {
+	position: relative;
+	bottom: 2em;
+	font-size: 2em;
 }
 
 /*--------------------------------------------------------------
