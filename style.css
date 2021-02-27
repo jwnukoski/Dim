@@ -754,6 +754,11 @@ nav.main-navigation a:hover {
 	margin: 0 0 1.5em;
 }
 
+.site-main {
+	max-width: 1024px;
+	margin: auto;
+}
+
 @media screen and (min-width: 37.5em) {
 	.site-main {
 		margin-top: 8em;
