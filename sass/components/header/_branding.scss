@@ -1,0 +1,26 @@
+.big-site-branding {
+	position: absolute;
+	top: 30vh;
+	left: 0;
+	width: 99vw;
+	text-align: center;
+	
+    .wrapper {
+        display: inline-block;
+        padding: 2em;
+        border-radius: $common_border_radius;
+        background-color: $color__background-transparency;
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0.25em;
+            letter-spacing: 0.1em;
+        }
+        
+        p {
+            margin: 0;
+            font-size: 2em;
+            font-weight: lighter;
+        }
+    }
+}

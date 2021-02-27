@@ -26,25 +26,6 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'dim' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$dim_description = get_bloginfo( 'description', 'display' );
-			if ( $dim_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $dim_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
 		<div id="mobile-menu">
 			<button id="menu-open" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
 			<nav id="mobile-site-navigation" class="main-navigation">
@@ -76,4 +57,35 @@
 				</div>
 			</nav><!-- #site-navigation -->
 		</div>
+
+		<!-- Big image -->
+		<?php if ( is_front_page() && !is_home() ) : ?>
+			<div class="header-image" style="background-image: url('<?php header_image(); ?>');"></div>
+			<div class="big-site-branding">
+				<div class="wrapper">
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<p class="site-description"><?php bloginfo( 'description' ) ?></p>
+				</div>
+			</div>
+		<?php else : ?>
+			<!-- Regular -->
+			<div class="site-branding">
+				<?php
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+				$dim_description = get_bloginfo( 'description', 'display' );
+				if ( $dim_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $dim_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+		<?php endif; ?>
 	</header><!-- #masthead -->

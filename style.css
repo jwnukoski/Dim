@@ -628,10 +628,6 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-body {
-	margin-top: 8em;
-}
-
 #mobile-menu #menu-open {
 	position: fixed;
 	top: 0;
@@ -639,7 +635,7 @@ body {
 	z-index: 99;
 	padding: 1.5em;
 	border-bottom-left-radius: 1em;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 #mobile-menu #menu-close {
@@ -663,7 +659,7 @@ body {
 	top: 0;
 	right: 0;
 	background-color: #061E4E;
-	box-shadow: -7px 0px 19px 1px rgba(0, 0, 0, 0.8);
+	box-shadow: -7px 0px 19px 1px rgba(0, 0, 0, 0.75);
 	height: 100vh;
 }
 
@@ -709,7 +705,7 @@ nav.main-navigation a:hover {
 		padding: 1em;
 		top: 0;
 		width: 100vw;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.75);
 	}
 	#desktop-menu nav.main-navigation .desktop-nav-brand {
 		float: left;
@@ -863,6 +859,44 @@ nav.main-navigation a:hover {
 
 .gallery-caption {
 	display: block;
+}
+
+/* Header
+--------------------------------------------- */
+.header-image {
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.big-site-branding {
+	position: absolute;
+	top: 30vh;
+	left: 0;
+	width: 99vw;
+	text-align: center;
+}
+
+.big-site-branding .wrapper {
+	display: inline-block;
+	padding: 2em;
+	border-radius: 12px;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.big-site-branding .wrapper h1 {
+	font-size: 4em;
+	margin-bottom: 0.25em;
+	letter-spacing: 0.1em;
+}
+
+.big-site-branding .wrapper p {
+	margin: 0;
+	font-size: 2em;
+	font-weight: lighter;
 }
 
 /*--------------------------------------------------------------
