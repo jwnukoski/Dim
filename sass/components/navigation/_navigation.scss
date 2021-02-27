@@ -1,3 +1,7 @@
+body {
+	margin-top: 8em;
+}
+
 #mobile-menu {
 	#menu-open {
 		position: fixed;
@@ -6,16 +10,17 @@
 		z-index: 99;
 		padding: 1.5em;
 		border-bottom-left-radius: 1em;
+		background-color: $color__background-full-transparent;
 	}
 
 	#menu-close {
 		float: right;
 		position: relative;
 		top: 4px;
+		background-color: $color__background-full-transparent;
 	}
 	
 	#menu-close, #menu-open {
-		background-color: $color__background-body;
 		color: $color__text-main;
 		border: none;
 		font-size: 1.5em;
@@ -29,7 +34,7 @@
 		top: 0;
 		right: 0;
 		background-color: $color__background-body;
-		box-shadow: -7px 0px 19px 1px rgba(0,0,0,0.77);
+		box-shadow: -7px 0px 19px 1px $color__background-transparency;
 		height: 100vh;
 
 		ul {
@@ -47,6 +52,17 @@
 	}
 }
 
+nav.main-navigation a {
+	color: $color__text-main;
+	line-height: 1em;
+
+	&:hover {
+		text-decoration: underline;
+		text-decoration-color: $color__link-hover;
+		text-decoration-thickness: 8px;
+	}
+}
+
 #desktop-menu {
 	display: none;
 }
@@ -61,12 +77,23 @@
 		display: block;
 
 		nav.main-navigation {
+			.desktop-nav-brand {
+				float: left;
+				padding-top: 1em;
+				font-weight: bold;
+			}
+
+			.desktop-nav-pages {
+				float: right;
+			}
+
 			z-index: 100;
 			display: block;
 			position: fixed;
 			padding: 1em;
 			top: 0;
-			background-color: $color__background-body;
+			width: 100vw;
+			background-color: $color__background-transparency;
 		
 			ul {
 				display: block;

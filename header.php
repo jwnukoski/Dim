@@ -61,14 +61,19 @@
 		</div>
 		<div id="desktop-menu">
 			<nav id="site-navigation" class="main-navigation">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+				<div class="desktop-nav-brand">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</div>
+				<div class="desktop-nav-pages">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
