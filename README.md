@@ -1,6 +1,7 @@
 # About:
 Dim is a simple dark WordPress theme based off of the Underscores boiler plate.  
 This project is still in its very early stages.  
+![Screenshot of Dim](https://github.com/jwnukoski/Dim/blob/main/screenshot.png?raw=true "Dim Figma screenshot")
 
 # Styling:
 Styles are in SCSS.    
