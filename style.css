@@ -401,6 +401,9 @@ h4,
 h5,
 h6 {
 	clear: both;
+	text-decoration: underline;
+	text-decoration-color: #C189DD;
+	text-decoration-thickness: 0.1em;
 }
 
 p {
@@ -587,7 +590,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: white;
+	color: black;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -609,7 +612,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: white;
+	color: black;
 }
 
 select {
@@ -803,6 +806,15 @@ nav.main-navigation a:hover {
 	list-style: none;
 }
 
+#desktop-menu .navwidgets {
+	float: right;
+	margin-top: 0.5em;
+}
+
+.navwidgets li {
+	list-style: none;
+}
+
 /* Media
 --------------------------------------------- */
 .page-content .wp-smiley,
@@ -920,6 +932,7 @@ nav.main-navigation a:hover {
 	font-size: 4em;
 	margin: 0;
 	letter-spacing: 0.1em;
+	text-decoration: none;
 }
 
 .big-site-branding .wrapper p {
