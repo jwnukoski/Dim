@@ -5,4 +5,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	text-decoration: underline;
+	text-decoration-color: $color__text-screen;
+	text-decoration-thickness: 0.1em;
 }

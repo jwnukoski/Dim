@@ -1,6 +1,6 @@
 # About:
 Dim is a simple dark WordPress theme based off of the Underscores boiler plate.  
-This project is still in its very early stages.  
+It comes with a scalable navigation menu for mobile and desktop devices.
 ![Screenshot of Dim](https://github.com/jwnukoski/Dim/blob/main/screenshot.png?raw=true "Dim Figma screenshot")
 
 # Styling:
@@ -11,6 +11,11 @@ Roboto is the main font-family.
 # Libraries:  
 Dim comes with the following libraries:  
 - FontAwesome (CDN)  
+
+# Recommendations:
+- Search widgets are better placed in the 'Navbar' widget area.
+- Text heavy widgets should be placed in the 'footer' widget area.
+- To change the header image, login to WordPress and view the home page > Customize > Header Image.
 
 # Plugins:  
 Dim will never require any additional third-party plugins.  
