@@ -12,6 +12,14 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+		<div id="secondary" class="widget-area">
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		</div><!-- #secondary -->
+	<?php endif; ?>
+
+	
+
 		<div class="site-info">
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

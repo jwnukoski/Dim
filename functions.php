@@ -133,6 +133,14 @@ function dim_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Navbar', 'dim' ),
+			'id'            => 'navbar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'dim' )
+		)
+	);
 }
 add_action( 'widgets_init', 'dim_widgets_init' );
 

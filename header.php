@@ -38,6 +38,11 @@
 					)
 				);
 				?>
+				<div class="navwidgets widget-area">
+					<?php if ( is_active_sidebar( 'navbar-1' ) ) : ?>
+						<?php dynamic_sidebar( 'navbar-1' ); ?>
+					<?php endif; ?>
+				</div>
 			</nav><!-- #site-navigation -->
 		</div>
 		<div id="desktop-menu">
@@ -54,6 +59,11 @@
 						)
 					);
 					?>
+				</div>
+				<div class="navwidgets widget-area">
+					<?php if ( is_active_sidebar( 'navbar-1' ) ) : ?>
+						<?php dynamic_sidebar( 'navbar-1' ); ?>
+					<?php endif; ?>
 				</div>
 			</nav><!-- #site-navigation -->
 		</div>

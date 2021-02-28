@@ -785,6 +785,24 @@ nav.main-navigation a:hover {
 	max-width: 100%;
 }
 
+#secondary {
+	max-width: 1024px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#secondary section {
+	padding: 1em;
+}
+
+#secondary section ul {
+	padding: 0;
+	margin: 0 0 0 1em;
+	list-style: none;
+}
+
 /* Media
 --------------------------------------------- */
 .page-content .wp-smiley,

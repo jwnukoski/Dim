@@ -6,3 +6,24 @@
 		max-width: 100%;
 	}
 }
+
+#secondary {
+	max-width: $max_width;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	section {
+		padding: 1em;
+
+		ul {
+			padding: 0;
+			margin: 0 0 0 1em;
+			list-style: none;
+			li {
+
+			}
+		}
+	}
+}
