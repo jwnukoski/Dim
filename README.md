@@ -1,6 +1,4 @@
 # Dim
-
-## About:
 Dim is a simple dark WordPress theme based off of the Underscores boiler plate.  
 This project is still in its very early stages.  
 
